@@ -17,25 +17,46 @@
 ////////////////////////////////////////////////////////////
 
 
-const ripetizioni = 5;
-let somma = 0;
-for (let i = 0; i < ripetizioni; i++) {
-  const numeroInserito = Number(prompt(`inserisci un numero`));
-  somma += numeroInserito;
-}
-alert(`la somma dei numeri da te inseriti è: ${somma}`);
-somma = 0;
+// const ripetizioni = 5;
+// let somma = 0;
+// for (let i = 0; i < ripetizioni; i++) {
+//   const numeroInserito = Number(prompt(`inserisci un numero`));
+//   somma += numeroInserito;
+// }
+// alert(`la somma dei numeri da te inseriti è: ${somma}`);
+// somma = 0;
+// let contatore = 0;
+// while (contatore < ripetizioni) {
+//   const numeroInserito = Number(prompt(`inserisci un numero`));
+//   somma += numeroInserito;
+//   contatore++;
+// }
+// alert(`la somma dei numeri da te inseriti è: ${somma}`)
+
+
+// In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
+////////////////////////////////////////////////////////////////
+// const invitati = ['ciccio','mario','fabio','luigi',];
+// const nomeInvitato = prompt('inserisci il tuo nome');
+// alert(`${nomeInvitato} ${invitati.includes(nomeInvitato)?'ok puoi entrare':'mi spiace non puoi entrare'}`);
+//
+//
+//
+
+// Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array.
+/////////////////////////////////////////////////////////////////////
+
+const newArray = [];
 let contatore = 0;
+const ripetizioni = 6;
 while (contatore < ripetizioni) {
-  const numeroInserito = Number(prompt(`inserisci un numero`));
-  somma += numeroInserito;
+  const numeroInserito = prompt('inserisci un numero');
+  if (numeroInserito % 2 == 0) {
+    newArray.push(numeroInserito);
+  }
   contatore++;
 }
-alert(`la somma dei numeri da te inseriti è: ${somma}`)
-
-
-
-
+console.log(newArray);
 
 
 
