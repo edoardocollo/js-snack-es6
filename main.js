@@ -43,21 +43,40 @@
 //
 //
 
-// Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array.
-/////////////////////////////////////////////////////////////////////
+// // Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array.
+// /////////////////////////////////////////////////////////////////////
+//
+// const newArray = [];
+// let contatore = 0;
+// const ripetizioni = 6;
+// while (contatore < ripetizioni) {
+//   const numeroInserito = prompt('inserisci un numero');
+//   if (numeroInserito % 2 == 0) {
+//     newArray.push(numeroInserito);
+//   }
+//   contatore++;
+// }
+// console.log(newArray);
+//
 
-const newArray = [];
-let contatore = 0;
-const ripetizioni = 6;
-while (contatore < ripetizioni) {
-  const numeroInserito = prompt('inserisci un numero');
-  if (numeroInserito % 2 == 0) {
-    newArray.push(numeroInserito);
-  }
-  contatore++;
-}
-console.log(newArray);
 
+// Stampa il cubo dei primi N numeri, dove N è un numero indicato dall’utente.
+//////////////////////////////////////////////////////////////////////////////////
+//
+// const numeroN = prompt('inserisci un numero');
+// for (let i = 0; i < numeroN ; i++) {
+//   console.log(Math.pow((i +1), 3));
+// }
+
+// Stampa le potenze di 2 fino a 1000.
+///////////////////////////////////////////////
+// const ripetizioni = 1000;
+// const base = 2;
+// let contatore = 0;
+// while (contatore < ripetizioni) {
+//   console.log(Math.pow(base, (contatore + 1)));
+//   contatore++;
+// }
 
 
 
