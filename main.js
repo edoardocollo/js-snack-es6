@@ -109,16 +109,62 @@
 // Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di invitati.
 //////////////////////////////////////////////////////////////////////
 
-const nomi = ['ciccio','caio','mario','luigi','stefano','manuela','gianni','claudia'];
-const cognomi = ['rossi','bianchi','verdi','stefanini','bruno','bosticco'];
-const quantiNomi = 6;
-const arrayFalsiInvitati = [];
-for (let i = 0; i < quantiNomi; i++) {
-  const random1=Math.floor(Math.random() * ((nomi.length -1) - 1 + 1) ) + 1;
-  const random2=Math.floor(Math.random() * ((cognomi.length -1) - 1 + 1) ) + 1;
-  arrayFalsiInvitati.push(`${nomi[random1]} ${cognomi[random2]}`);
+// const nomi = ['ciccio','caio','mario','luigi','stefano','manuela','gianni','claudia'];
+// const cognomi = ['rossi','bianchi','verdi','stefanini','bruno','bosticco'];
+// const quantiNomi = 6;
+// const arrayFalsiInvitati = [];
+// for (let i = 0; i < quantiNomi; i++) {
+//   const random1=Math.floor(Math.random() * ((nomi.length -1) - 1 + 1) ) + 1;
+//   const random2=Math.floor(Math.random() * ((cognomi.length -1) - 1 + 1) ) + 1;
+//   arrayFalsiInvitati.push(`${nomi[random1]} ${cognomi[random2]}`);
+// }
+// console.log(arrayFalsiInvitati);
+//
+
+// Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari
+/////////////////////////////////////////////////////////////////////////////////
+// const arrayNumeriInteri = [];
+// const quantiNumeri = 10;
+// for (let i = 0; i < quantiNumeri; i++) {
+//   const numeroRandom = Math.floor(Math.random() * ((10 -1) - 1 + 1) ) + 1;
+//   arrayNumeriInteri.push(numeroRandom);
+// }
+// console.log(arrayNumeriInteri);
+// let sommaDispariIndex = 0;
+// for (let i = 0; i < arrayNumeriInteri.length; i++) {
+//   if (i%2 !== 0) {
+//     sommaDispariIndex += arrayNumeriInteri[i];
+//   }
+// }
+// console.log(sommaDispariIndex);
+//
+
+// Crea due array che hanno un numero di elementi diversi. Aggiungi elementi casuali all’array che ha meno elementi, fino a quando ne avrà tanti quanti l’altro.
+///////////////////////////////////////////////////////////////////////////////////
+
+const array1 = [1,2,3,4,5,6,7];
+const array2 = [1,2,3,4];
+console.log(array1, array2);
+if (array1.length < array2.length) {
+  while (array1.length < array2.length) {
+    array1.push(Math.floor(Math.random() * ((10 -1) - 1 + 1) ) + 1);
+  }
 }
-console.log(arrayFalsiInvitati);
+else if(array2.length < array1.length) {
+
+  while (array2.length < array1.length) {
+    array2.push(Math.floor(Math.random() * ((10 -1) - 1 + 1) ) + 1);
+  }
+}else{
+    console.log('i due array sono lunghi uguali');
+
+}
+console.log(array1, array2);
+
+
+
+
+
 
 
 // CREA OGGETTO PALLA es6
