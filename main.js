@@ -78,6 +78,26 @@
 //   contatore++;
 // }
 
+// Chiedi un numero di 4 cifre all’utente e calcola la somma di tutte le cifre che compongono il numero.
+//////////////////////////////////////////////////////////////////////
+
+// const numeroUtente = prompt('inserisci un numero di 4 cifre');
+// let somma = 0;
+// for (let i = 0; i < numeroUtente.length; i++) {
+//   somma += Number(numeroUtente[i]);
+// }
+// console.log(somma);
+
+// Calcola la somma e la media dei primi 10 numeri.
+const quantiNumeri = 10;
+let somma = 0;
+let media = 0;
+
+for (let i = 0; i < quantiNumeri; i++) {
+  somma += (i+1)
+}
+console.log(`la somma sei primi ${quantiNumeri} numeri è: ${somma}
+la media dei primi ${quantiNumeri} è: ${somma/quantiNumeri}`);
 
 
 // CREA OGGETTO PALLA es6
