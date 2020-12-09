@@ -89,15 +89,36 @@
 // console.log(somma);
 
 // Calcola la somma e la media dei primi 10 numeri.
-const quantiNumeri = 10;
-let somma = 0;
-let media = 0;
+// const quantiNumeri = 10;
+// let somma = 0;
+// let media = 0;
+//
+// for (let i = 0; i < quantiNumeri; i++) {
+//   somma += (i+1)
+// }
+// console.log(`la somma sei primi ${quantiNumeri} numeri è: ${somma}
+// la media dei primi ${quantiNumeri} è: ${somma/quantiNumeri}`);
 
-for (let i = 0; i < quantiNumeri; i++) {
-  somma += (i+1)
+
+// Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo
+// ////////////////////////////////////////////////////
+// const numeroUtente = Number(prompt('inserisci un numero'));
+// console.log(`${numeroUtente%2==0?numeroUtente:numeroUtente+1}`);
+
+
+// Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di invitati.
+//////////////////////////////////////////////////////////////////////
+
+const nomi = ['ciccio','caio','mario','luigi','stefano','manuela','gianni','claudia'];
+const cognomi = ['rossi','bianchi','verdi','stefanini','bruno','bosticco'];
+const quantiNomi = 6;
+const arrayFalsiInvitati = [];
+for (let i = 0; i < quantiNomi; i++) {
+  const random1=Math.floor(Math.random() * ((nomi.length -1) - 1 + 1) ) + 1;
+  const random2=Math.floor(Math.random() * ((cognomi.length -1) - 1 + 1) ) + 1;
+  arrayFalsiInvitati.push(`${nomi[random1]} ${cognomi[random2]}`);
 }
-console.log(`la somma sei primi ${quantiNumeri} numeri è: ${somma}
-la media dei primi ${quantiNumeri} è: ${somma/quantiNumeri}`);
+console.log(arrayFalsiInvitati);
 
 
 // CREA OGGETTO PALLA es6
